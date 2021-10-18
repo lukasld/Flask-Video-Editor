@@ -169,15 +169,3 @@ curl -X GET -H "Content-Type: application/json" \
 -b './cookie.txt' \
 '0.0.0.0:5000/videoApi/v1/help/filters/<filtername>'
 ```
-
-### Limitations and Todo's:
-
-- Swagger
-- The API is designed around accepting `.mp4` @ `720p`.
-- I tried to cover most grounds and exceptions but might need a second pair of eyes.
-- Automated Testing
-- Developed and tested on Ubuntu 20.04.
-
-
-
-
