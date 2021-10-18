@@ -11,7 +11,7 @@ Build in Flask and Python
 
 ### Setup Guidlines
 
-1. `$ cd` into the repository - `lukas-debiasi_engineering_challenge`
+1. `$ cd` into the repository
 2. Create environment - through issuing `$ python3 -m venv venv`
 3. Activate environment through:`$ source venv/bin/activate`
 4. Install dependencies `$ pip install -r requirements.txt`
