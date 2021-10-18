@@ -1,3 +1,8 @@
+### About
+
+A simple Flask-Video-Api that allows for uploading videos, previewing keyframes, adding filters and downloading the edited video.
+Build in Flask and Python
+
 ### Requirements
 
 - Make sure that you have pip installed `$ which pip`
