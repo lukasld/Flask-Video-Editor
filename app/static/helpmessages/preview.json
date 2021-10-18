@@ -1,0 +1,14 @@
+{
+    "name": "preview",
+    "type": "endpoint",
+    "description": "preview a frame of your choice, by using index and a filter. Filter parameter - values need to be positive integers",
+    "http_header": {
+        "method": "GET/POST",
+        "mimetype": "application/json",
+        "req_datatype": "",
+        "cookies": true
+    },
+    "data_parameters": "{filter_params:{\"type\":\"<str:filter_name>\", \"<str:filter_param_1>\":<int:value>, \"<str:filter_param_2>\":<int:value>}}",
+    "endpoint_short_url": "/videoApi/v1/preview/<int:frame_idx>/",
+    "example_curl_request": "\ncurl -X GET -H \"Content-Type: application/json\"\n-b \"./cookie.txt\"\n-d '\\{filter_params:{\"type\":\"<str:filter_name>\", \"<str:filter_param_1>\":<int:value>, \"<str:filter_param_2>\":<int:value>}}'\n'\\http://www.videoFilters.cool/videoApi/v1/preview/<int:frame_index>/' > filter.png\n"
+}

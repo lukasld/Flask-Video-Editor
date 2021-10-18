@@ -1,0 +1,14 @@
+{
+"name": "upload",
+"type": "endpoint",
+"description": "upload a video from your computer - video requirements are: RGB, 720p @ 23.98fps",
+"http_header": {
+    "method": "POST",
+    "mimetype": "multipart/form-data",
+    "req_datatype": "video/mp4",
+    "cookies": true
+},
+"data_parameters": {},
+"endpoint_short_url": "/videoApi/v1/upload/",
+"example_curl_request": "\ncurl -X POST -H \"Content-Type: multipart/form-data\"\n-F \"file=@/<path_to_video>/<video_name>.mp4;Type=video/mp4\"\n-j -D \"./cookie.txt\"\n'\\http://www.videoFilters.cool/videoApi/v1/upload/'\n"
+}

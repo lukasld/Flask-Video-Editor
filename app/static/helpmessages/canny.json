@@ -1,0 +1,21 @@
+{
+    "name": "canny",
+    "type": "filter",
+    "description": "add the canny filter, use thresh1 and thresh2 as parameters. Both parameters need to be integers > 0 ",
+    "required_parameters":["filter_params", "fps", "type", "thresh1", "thresh2"],
+    "optional_parameters":["min_f", "max_f"],
+    "http_header": {
+        "method": "POST",
+        "mimetype": "application/json",
+        "req_datatype": "",
+        "cookies": true
+    },
+    "wiki_url":"https://en.wikipedia.org/wiki/Canny_edge_detector",
+    "data_parameters": "{\"filter_params\":{\"type\":\"canny\", \"thresh1\":<int:value>, \"thresh2\":<int:value>}}",
+    "endpoint_help_short_url": "/videoApi/v1/help/filters/canny/",
+    "example_curl_preview_request": "\ncurl -X GET -H \"Content-Type: application/json\"\n-b \"./cookie.txt\"\n-d '\\{\"filter_params\":{\"type\":\"canny\", \"thresh1\":10, \"thresh2\":200}}'\n'\\http://www.videoFilters.cool/videoApi/v1/preview/<int:frame_index>/' > canny.png\n",
+    "example_curl_video_request": "\ncurl -X POST -H \"Content-Type: application/json\"\n-b \"./cookie.txt\"\n-d '\\{\"filter_params\":{\"type\":\"canny\", \"thresh1\":10, \"thresh2\":200 , \"min_f\":100 , \"max_f\":300}}'\n'\\http://www.videoFilters.cool/videoApi/v1/download/' > canny.mp4\n"
+}
+
+
+

@@ -1,0 +1,15 @@
+{
+    "name": "download",
+    "type": "endpoint",
+    "description": "download your uploaded video from your computer.  You can add a filter, to the whole movie, or by a range of min and max keyframes. Some filters require filter_parameters, check out the help for each filter to learn more",
+    "required_parameters":["filter_params", "fps", "type"],
+    "http_header": {
+        "method": "POST",
+        "mimetype": "application/json",
+        "req_datatype": "",
+        "cookies": true
+    },
+    "data_parameters": "{filter_params:{\"fps\":\"<fps>\",\"type\":\"<filter_name>\", \"<filter_param_1>\":<value>, \"<filter_param_2>\":<value>, \"min_f\":<int:frame_index>, \"<max_f>\":<int:frame_index>}}",
+    "endpoint_short_url": "/videoApi/v1/download/",
+    "example_curl_request": "\ncurl -X POST -H \"Content-Type: application/json\"\n-b \"./cookie.txt\"\n-d '\\{filter_params:{\"fps\":\"<fps>\",\"type\":\"<filter_name>\", \"<filter_param_1>\":<value>, \"<filter_param_2>\":<value> , \"<min_f>\":<int:frame_index> , \"<max_f>\":<int:frame_index>}}'\n'\\http://www.videoFilters.cool/videoApi/v1/download/' > download.mp4\n"
+}

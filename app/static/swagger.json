@@ -1,0 +1,27 @@
+{
+    "openapi": "3.0.0",
+    "info":{
+        "description": "A Rest-Api, that allows for uploading and adding filters to videos (720p)",
+        "version": "0.0.1",
+        "title": "Video-Api",
+        "contact":{
+            "email": "lukas.debiasi@gmail.com"
+        },
+        "license":{
+            "name": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+        }
+    },
+
+ "servers": [
+    {
+      "url": "/"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Book Request",
+      "description": "Example API for requesting and return book requests"
+    }
+  ]
+}

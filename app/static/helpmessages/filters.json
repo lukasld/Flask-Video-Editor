@@ -1,0 +1,15 @@
+{
+    "name": "filters",
+    "type": "endpoint",
+    "description": "Check out all the possible filters, which can be used for preview and download. Some require extra parameters which are listed in the help-pages for each one",
+    "filter_paths": ["/canny/", "/greyscale/", "/laplacian/", "/gauss/"],
+    "http_header": {
+        "method": "GET",
+        "mimetype": "application/json",
+        "req_datatype": "",
+        "cookies": true
+    },
+    "data_parameters": {},
+    "endpoint_short_help_url": "/videoApi/v1/help/filters/",
+    "example_curl_request": "\ncurl -X GET -H \"Content-Type: application/json\"\n-b \"./cookie.txt\"\n'\\http://www.videoFilters.cool/videoApi/v1/help/filters/'\n"
+}

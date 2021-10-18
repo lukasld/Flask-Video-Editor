@@ -1,0 +1,14 @@
+{
+    "name": "status",
+    "type": "endpoint",
+    "description": "check the progress of the process. Call while downloading and it shows you the frames already processed",
+    "http_header": {
+        "method": "GET",
+        "mimetype": "application/json",
+        "req_datatype": "",
+        "cookies": true
+    },
+    "data_parameters": {},
+    "endpoint_short_url": "/videoApi/v1/status/",
+    "example_curl_request": "\ncurl -X GET -H \"Content-Type: application/json\"\n-b \"./cookie.txt\"\n'\\http://www.videoFilters.cool/videoApi/v1/status/'\n"
+}

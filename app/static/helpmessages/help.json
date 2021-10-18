@@ -1,0 +1,16 @@
+{
+    "name": "help",
+    "type": "endpoint",
+    "description": "Help - where you need it - possible help for endpoints and filters can be found under the following urls",
+    "help_endpt_paths": ["/upload/", "/preview/", "/download/", "/stats/", "/filters/"],
+    "help_filter_paths":["/filters/canny/", "/filters/greyscale/", "/filters/laplacian", "/filters/gauss/"],
+    "http_header": {
+        "method": "GET",
+        "mimetype": "application/json",
+        "req_datatype": "",
+        "cookies": true
+    },
+    "data_parameters": {},
+    "endpoint_short_url": "/videoApi/v1/help/",
+    "example_curl_request": "\ncurl -X GET -H \"Content-Type: application/json\"\n-b \"./cookie.txt\"\n'\\http://www.videoFilters.cool/videoApi/v1/help/'\n"
+}

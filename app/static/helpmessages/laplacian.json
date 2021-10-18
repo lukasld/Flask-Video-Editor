@@ -1,0 +1,19 @@
+{
+    "name": "laplacian",
+    "type": "filter",
+    "description": "Add the laplacian edge detector, no parameters are needed for this one!",
+    "required_parameters":["filter_params", "fps", "type"],
+    "http_header": {
+        "method": "POST",
+        "mimetype": "application/json",
+        "req_datatype": "",
+        "cookies": true
+    },
+    "info_url":"https://docs.opencv.org/3.4/d5/db5/tutorial_laplace_operator.html",
+    "data_parameters": "{\"filter_params\":{\"type\":\"laplacian\"}}",
+    "endpoint_short_help_url": "/videoApi/v1/help/filters/laplacian/",
+    "example_curl_preview_request": "\ncurl -X GET -H \"Content-Type: application/json\"\n-b \"./cookie.txt\"\n-d '\\{\"filter_params\":{\"type\":\"laplacian\"}}'\n'\\http://www.videoFilters.cool/videoApi/v1/preview/<int:frame_index>/' > laplacian.png\n",
+    "example_curl_video_request": "\ncurl -X POST -H \"Content-Type: application/json\"\n-b \"./cookie.txt\"\n-d '\\{\"filter_params\":{\"type\":\"laplacian\"}}'\n'\\http://www.videoFilters.cool/videoApi/v1/download/' > laplacian.mp4\n"
+}
+
+

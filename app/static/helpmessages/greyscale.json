@@ -1,0 +1,18 @@
+{
+    "name": "greyscale",
+    "type": "filter",
+    "description": "add the greyscale filter, no parameters are needed for this one!",
+    "required_parameters":["filter_params", "fps", "type"],
+    "http_header": {
+        "method": "POST",
+        "mimetype": "application/json",
+        "req_datatype": "",
+        "cookies": true
+    },
+    "info_url":"",
+    "data_parameters": "{\"filter_params\":{\"type\":\"greyscale\"}}",
+    "endpoint_short_help_url": "/videoApi/v1/help/filters/greyscale/",
+    "example_curl_preview_request": "\ncurl -X GET -H \"Content-Type: application/json\"\n-b \"./cookie.txt\"\n-d '\\{\"filter_params\":{\"type\":\"greyscale\"}}'\n'\\http://www.videoFilters.cool/videoApi/v1/preview/<int:frame_index>/' > greyscale.png\n",
+    "example_curl_video_request": "\ncurl -X POST -H \"Content-Type: application/json\"\n-b \"./cookie.txt\"\n-d '\\{\"filter_params\":{\"type\":\"greyscale\"}}'\n'\\http://www.videoFilters.cool/videoApi/v1/download/' > greyscale.mp4\n"
+}
+

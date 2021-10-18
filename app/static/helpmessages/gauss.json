@@ -1,0 +1,20 @@
+{
+    "name": "gauss",
+    "type": "filter",
+    "description": "add the gauss filter, use ksize_x and ksize_y as parameters. Both parameters need to be integers > 0, and NEED to be ODD numbers",
+    "required_parameters":["filter_params", "fps", "type", "ksize_x", "ksize_y"],
+    "optional_parameters":["min_f", "max_f"],
+    "http_header": {
+        "method": "POST",
+        "mimetype": "application/json",
+        "req_datatype": "",
+        "cookies": true
+    },
+    "wiki_url":"https://en.wikipedia.org/wiki/Gaussian_filter",
+    "data_parameters": "{\"filter_params\":{\"type\":\"gauss\", \"ksize_x\":<int:odd>, \"ksize_y\":<int:odd>}}",
+    "endpoint_short_help_url": "/videoApi/v1/help/filters/gauss/",
+    "example_curl_preview_request": "\ncurl -X GET -H \"Content-Type: application/json\"\n-b \"./cookie.txt\"\n-d '\\{\"filter_params\":{\"type\":\"gauss\", \"ksize_x\":31, \"ksize_y\":51}}'\n'\\http://www.videoFilters.cool/videoApi/v1/preview/<int: frame_index>/' > gauss.png\n",
+    "example_curl_video_request": "\ncurl -X POST -H \"Content-Type: application/json\"\n-b \"./cookie.txt\"\n-d '\\{\"filter_params\":{\"type\":\"gauss\", \"ksize_x\":31, \"ksize_y\":33 , \"min_f\":100 , \"max_f\":300}}'\n'\\http://www.videoFilters.cool/videoApi/v1/download/' > gauss.mp4\n"
+}
+
+

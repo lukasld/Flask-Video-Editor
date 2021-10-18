@@ -1,0 +1,9 @@
+__pycache__
+venv
+run.sh
+*.mp4
+*.png
+*.swp
+*.swa
+*.DS_Store
+
